@@ -1,0 +1,7 @@
+.email-list li {
+    list-style: none;
+}
+
+.email-list .actions {
+    display: inline-flex;
+}

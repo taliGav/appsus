@@ -1,0 +1,9 @@
+.email-filter input{
+    height: 70px;
+    width: 40vw;
+    border-radius: 50px;
+    border: none;
+    opacity: 60%;
+    padding: 0 30px;
+    font-size: 1.5rem;
+}

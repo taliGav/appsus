@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}
+
+/* book-list */
+
+.book-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.book-list .actions {
+    display: flex;
+    justify-content: center;
+}
+
+.book-list .actions>* {
+    color: rgb(18, 73, 11);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px black solid;
+    text-decoration: none;
+    background-color: rgb(65, 184, 18);
+}
+
+/* book-preview */
+
+.book-preview u {
+    font-weight: 900;
+    text-decoration: none
+}
+
+.book-preview {
+    position: relative;
+}
+
+.book-preview-details {
+    text-align: center;
+}
+
+.book-preview-details img {
+    width: 100px;
+    border-radius: 5px;
+    border: 1px black solid;
+    transform: perspective(30deg);
+}
+
+.book-preview-contaoner {
+    padding: 10px;
+    width: 120px;
+    margin: 10px;
+    height: 280px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px rgb(4, 53, 2) solid;
+    box-shadow: 5px 5px 5px rgb(42, 80, 30);
+}
+
+.book-preview-contaoner:hover {
+    background-color: rgb(83, 160, 85);
+    transform: scale(1.05);
+    transition: 0.3s all;
+    box-shadow: 10px 10px 10px rgb(42, 80, 30);
+}
+
+.onSale {
+    border-radius: 5px;
+    background-color: rgb(233, 236, 34);
+    box-shadow: 2px 2px 5px rgb(78, 87, 29);
+    position: absolute;
+    padding: 5px;
+    top: -7px;
+    right: -28px;
+    transform: rotate(15deg);
+    border: 1px rgb(109, 107, 2) solid;
+}
+
+/* book-details */
+
+.book-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-details-exspand {
+    flex-direction: row-reverse;
+    display: flex;
+    box-shadow: 5px 5px 5px rgb(23, 78, 13);
+    border: 1px rgb(109, 107, 2) solid;
+    border-radius: 5px;
+    background-color: rgb(92, 160, 92);
+    padding: 20px;
+    width: 800px;
+    position: relative;
+}
+
+.book-details-exspand img {
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(23, 78, 13);
+}
+
+.book-details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.book-details-title {
+    font-size: larger;
+}
+
+.book-details u {
+    font-weight: 900;
+    text-decoration: none
+}
+
+/* book-filter */
+
+.book-filter {
+    background-color: rgb(0, 155, 0);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.book-filter>* {
+    padding: 2px;
+}
+
+.filteByNum input {
+    width: 60px;
+}
+
+.book-filter .filteByName {
+    width: 147px;
+}
+
+/* long-text */
+
+.long-text a {
+    color: rgb(74, 148, 84);
+    cursor: pointer;
+    background-color: rgb(155, 200, 155);
+    border-radius: 5px;
+}
+
+.add-review {
+    box-shadow: 5px 5px 5px rgb(23, 78, 13);
+    border-radius: 5px;
+    border: 1px rgb(109, 107, 2) solid;
+    background-color: rgb(92, 160, 92);
+    padding: 20px;
+    width: 450px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.review-name {
+    width: 129px;
+}
+
+.review-info>* {
+    height: 40px;
+}
+
+.createReview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-scroller ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.reviews-scroller li {
+    list-style: none;
+}
+
+.review {
+    background-color: rgb(128, 184, 128);
+    width: 300px;
+    height: 280px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(23, 78, 13);
+    border: 1px rgb(109, 107, 2) solid;
+}
+
+.review-body textarea {
+    min-height: 110px;
+    border-radius: 5px;
+    width: 260px;
+    background-color: rgb(204, 231, 209);
+    border: 1px rgb(109, 107, 2) solid;
+}
+
+.review-body pre {
+    text-align: start;
+}
+
+.reviews-scroller hr {
+    width: 170px;
+}
+
+.reviews-scroller h3 {
+    margin-bottom: 10px;
+}
+
+/* pointers */
+
+#pointer-pageCount {
+    width: 90px;
+    padding: 10px;
+    height: 40px;
+    position: absolute;
+    background: rgb(210, 223, 40);
+    right: 320px;
+    top: 30px;
+}
+
+#pointer-pageCount:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid rgb(92, 160, 92);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+#pointer-price {
+    width: 110px;
+    height: 40px;
+    padding: 10px;
+    position: absolute;
+    background: #30d6eb;
+    top: 75px;
+    right: 320px;
+}
+
+#pointer-price:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid rgb(92, 160, 92);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+#pointer-publish {
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    background: rgb(179, 6, 98);
+    top: 120px;
+    padding: 10px;
+    right: 320px;
+}
+
+#pointer-publish:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid rgb(92, 160, 92);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.pointer {
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+}
+
+#trapezoid {
+    position: absolute;
+    border-bottom: 40px solid rgb(238, 255, 0);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    height: 0;
+    width: 200px;
+    transform: rotateZ(45deg);
+    right: -24px;
+    top: 56px;
+    display: flex;
+    text-align: right;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 36px;
+}

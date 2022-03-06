@@ -1,0 +1,125 @@
+.app-header {
+    height: 107px;
+    font-family: pegasus;
+    font-size: 40px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.app-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-opener {
+    background-color: white;
+    border-radius: 50%;
+    height: 80px;
+    width: 86px;
+    padding: 0;
+}
+
+.app-header a {
+    text-decoration: none;
+    color: black;
+}
+
+.app-header img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.app-header .nav-bar img {
+    position: relative;
+    top: 5px;
+}
+
+
+.app-header .nav-bar {
+    background-color: #b1dbd2e8;
+    position: absolute;
+    right: 14px;
+    width: 330px;
+    top: 120px;
+    height: 240px;
+    border-radius: 10px;
+    padding-top: 10px;
+    z-index: 20;
+}
+
+.app-header .nav-bar>* {
+    display: inline-flex;
+    box-shadow: 1px solid black;
+    height: 107px;
+    width: 150px;
+    padding: 0 10px;
+}
+
+/* //////// */
+
+.app-header h4 {
+    position: relative;
+    top: -12px;
+    font-size: 30px;
+    font-weight: 100;
+    display: inline-block;
+    /* padding: 10px; */
+    color: black;
+}
+
+/* ///// */
+/* hover */
+/* ///// */
+
+.app-header .keep-link :nth-child(2) {
+    display: none;
+}
+
+.app-header .keep-link:hover :nth-child(2) {
+    display: inline-block;
+}
+
+.app-header .keep-link:hover :first-child {
+    display: none;
+}
+
+.app-header .email-link :nth-child(2) {
+    display: none;
+}
+
+.app-header .email-link:hover :nth-child(2) {
+    display: inline-block;
+}
+
+.app-header .email-link:hover :first-child {
+    display: none;
+}
+
+.app-header .books-link :nth-child(2) {
+    display: none;
+}
+
+.app-header .books-link:hover :nth-child(2) {
+    display: inline-block;
+}
+
+.app-header .books-link:hover :first-child {
+    display: none;
+}
+
+.app-header .about-link :nth-child(2) {
+    display: none;
+}
+
+.app-header .about-link:hover :nth-child(2) {
+    display: inline-block;
+}
+
+.app-header .about-link:hover :first-child {
+    display: none;
+}

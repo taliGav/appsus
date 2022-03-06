@@ -1,0 +1,19 @@
+/* user-msg */
+
+.user-msg{
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.success {
+    background-color: lightgreen;
+}
+
+.error {
+    background-color: red;
+    color: white;
+}
+

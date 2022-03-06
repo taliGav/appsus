@@ -1,0 +1,28 @@
+.app-footer {
+    height: 10vh;
+    font-family: pegasus;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-footer a {
+    text-decoration: none;
+}
+
+.app-footer .logo{
+    margin: 10px;
+}
+
+.app-footer .logo img {
+    width: 50px;
+}
+
+.app-footer h2 {
+    color: black;
+    font-size: 40px;
+}
+
+.app-footer small {
+    font-size: 20px;
+    margin: 10px;
+}

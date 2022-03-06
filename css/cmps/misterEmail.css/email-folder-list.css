@@ -1,0 +1,42 @@
+.email-folder-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-folder-list img {
+    width: 50px;
+}
+
+.email-folder-list button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 215px;
+    flex-direction: row-reverse;
+    margin: 10px;
+}
+
+.email-folder-list button>* {
+    margin: 5px;
+
+}
+
+.email-folder-list button :nth-child(3) {
+    display: none;
+}
+
+.email-folder-list button:hover :nth-child(3) {
+    display: inline-block;
+}
+
+.email-folder-list button:hover :nth-child(2) {
+    display: none;
+}
+
+.email-folder-list p {
+    font-family: pegasus;
+    font-size: 30px;
+}

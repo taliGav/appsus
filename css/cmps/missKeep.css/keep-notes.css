@@ -1,0 +1,47 @@
+/* .page-height .note-cmps{ */
+    /* background-color: var(--clr1); */
+/* } */
+
+.add-note-container {
+    margin: 20px;
+}
+
+.notes-container {
+    margin: 30px 120px;
+}
+
+.note-container {
+    /* background-color: rgb(191, 224, 204); */
+    background-color: var(--clr1);
+    margin: 10px;
+    border-radius: 8px;
+    padding: auto;
+}
+
+.notes-container>* {
+    flex-grow: 1;
+    min-width: 230px;
+}
+
+.note-preview {
+    /* background-color: azure; */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.note-preview img {
+    max-width: 350px;
+}
+
+.note-title {
+    padding: 20px;
+}
+.note-text {
+    padding: 15px;
+}
+
+.command-panel-container{
+    padding: 10px;
+}
